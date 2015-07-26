@@ -533,7 +533,7 @@
         <image name="favorites.png" width="32" height="32"/>
         <image name="first" width="30" height="30"/>
         <image name="hiroomi.png" width="247" height="81"/>
-        <image name="profile.png" width="50" height="50"/>
+        <image name="profile.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="r5q-bW-8Cb"/>

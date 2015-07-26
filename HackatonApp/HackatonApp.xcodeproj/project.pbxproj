@@ -12,7 +12,10 @@
 		950A3D791B628E7100E323DE /* bg6.png in Resources */ = {isa = PBXBuildFile; fileRef = 950A3D781B628E7100E323DE /* bg6.png */; };
 		950A3D7F1B628F7400E323DE /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 950A3D7E1B628F7400E323DE /* contacts.png */; };
 		950A3D851B6414FA00E323DE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950A3D841B6414FA00E323DE /* AssetsLibrary.framework */; };
-		950A3D8D1B64890400E323DE /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 950A3D8C1B64890400E323DE /* profile.png */; };
+		951E8D0B1B6514860062A855 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951E8D0A1B6514860062A855 /* Accelerate.framework */; };
+		951E8D0D1B6514970062A855 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951E8D0C1B6514970062A855 /* Foundation.framework */; };
+		951E8D0F1B6514AC0062A855 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951E8D0E1B6514AC0062A855 /* UIKit.framework */; };
+		951E8D2F1B6580620062A855 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 951E8D2E1B6580620062A855 /* profile.png */; };
 		9558DFB21B60919000B25D27 /* favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 9558DFB11B60919000B25D27 /* favorites.png */; };
 		9558DFB61B615B7000B25D27 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9558DFB51B615B7000B25D27 /* bg.png */; };
 		9558DFBC1B6160D600B25D27 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9558DFBB1B6160D600B25D27 /* bg2.png */; };
@@ -63,7 +66,10 @@
 		950A3D781B628E7100E323DE /* bg6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg6.png; sourceTree = "<group>"; };
 		950A3D7E1B628F7400E323DE /* contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacts.png; sourceTree = "<group>"; };
 		950A3D841B6414FA00E323DE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		950A3D8C1B64890400E323DE /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		951E8D0A1B6514860062A855 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		951E8D0C1B6514970062A855 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		951E8D0E1B6514AC0062A855 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		951E8D2E1B6580620062A855 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		9558DFB11B60919000B25D27 /* favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorites.png; sourceTree = "<group>"; };
 		9558DFB51B615B7000B25D27 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		9558DFBB1B6160D600B25D27 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
@@ -114,18 +120,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951E8D0F1B6514AC0062A855 /* UIKit.framework in Frameworks */,
+				A012B34B19F413EC00C938A7 /* CoreGraphics.framework in Frameworks */,
+				951E8D0D1B6514970062A855 /* Foundation.framework in Frameworks */,
+				A012B35319F4140F00C938A7 /* QuartzCore.framework in Frameworks */,
+				951E8D0B1B6514860062A855 /* Accelerate.framework in Frameworks */,
 				950A3D851B6414FA00E323DE /* AssetsLibrary.framework in Frameworks */,
 				A012B36119F4146E00C938A7 /* ParseFacebookUtils.framework in Frameworks */,
 				A012B35919F4142900C938A7 /* SystemConfiguration.framework in Frameworks */,
 				A012B35719F4142000C938A7 /* StoreKit.framework in Frameworks */,
 				A012B35519F4141700C938A7 /* Security.framework in Frameworks */,
-				A012B35319F4140F00C938A7 /* QuartzCore.framework in Frameworks */,
 				A012B35119F4140300C938A7 /* MobileCoreServices.framework in Frameworks */,
 				A012B35D19F4145300C938A7 /* FacebookSDK.framework in Frameworks */,
 				A012B35F19F4145F00C938A7 /* Parse.framework in Frameworks */,
 				A012B34F19F413FA00C938A7 /* libz.dylib in Frameworks */,
 				A012B34D19F413F100C938A7 /* CoreLocation.framework in Frameworks */,
-				A012B34B19F413EC00C938A7 /* CoreGraphics.framework in Frameworks */,
 				A012B35B19F4144B00C938A7 /* Bolts.framework in Frameworks */,
 				9558DFCE1B61D02700B25D27 /* ParseUI.framework in Frameworks */,
 				A012B34919F413E100C938A7 /* CFNetwork.framework in Frameworks */,
@@ -192,7 +201,7 @@
 				950A3D761B628E6C00E323DE /* bg5.png */,
 				950A3D781B628E7100E323DE /* bg6.png */,
 				9558DFB11B60919000B25D27 /* favorites.png */,
-				950A3D8C1B64890400E323DE /* profile.png */,
+				951E8D2E1B6580620062A855 /* profile.png */,
 				959854FE1B5F4D2400C89F76 /* bk.jpg */,
 				9582CF4E1B5F52EA001574B9 /* hiroomi.png */,
 				A012B31E19F410DA00C938A7 /* Info.plist */,
@@ -234,6 +243,9 @@
 		A086263219F71D0200249BCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				951E8D0E1B6514AC0062A855 /* UIKit.framework */,
+				951E8D0C1B6514970062A855 /* Foundation.framework */,
+				951E8D0A1B6514860062A855 /* Accelerate.framework */,
 				950A3D841B6414FA00E323DE /* AssetsLibrary.framework */,
 				9558DFCD1B61D02700B25D27 /* ParseUI.framework */,
 				A012B36019F4146E00C938A7 /* ParseFacebookUtils.framework */,
@@ -334,7 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				950A3D8D1B64890400E323DE /* profile.png in Resources */,
+				951E8D2F1B6580620062A855 /* profile.png in Resources */,
 				A012B32C19F410DA00C938A7 /* Main.storyboard in Resources */,
 				950A3D771B628E6C00E323DE /* bg5.png in Resources */,
 				950A3D711B628CE500E323DE /* bg4.png in Resources */,
