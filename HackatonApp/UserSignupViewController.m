@@ -49,7 +49,7 @@
     [self.view addSubview:indicator];
     
     PFUser *newUser = [PFUser user];
-    newUser.username = self.mailField.text;
+    newUser.username = self.nameField.text;
     newUser.email = self.mailField.text;
     newUser.password = self.passwordField.text;
     newUser[@"fullName"] = self.nameField.text;

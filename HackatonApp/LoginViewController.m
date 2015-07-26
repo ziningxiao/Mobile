@@ -72,10 +72,9 @@
                                                   otherButtonTitles:@"Dismiss", nil];
             [alert show];
         } else {
-            if (user.isNew) {
+            //if (user.isNew) {
                 NSLog(@"User with facebook signed up and logged in!");
                 FBRequest *request = [FBRequest requestForMe];
-                
                 // Send request to Facebook
                 [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
                     // handle response
@@ -86,21 +85,24 @@
                         
                         NSLog(@"%@", userData);
                         
-                        user[@"fullName"]=  [userData[@"first_name"]  stringByAppendingString: userData[@"last_name"] ];
+                        //user[@"fullName"]=  [userData[@"first_name"]  stringByAppendingString: userData[@"last_name"] ];
+                        user[@"fullName"]=  userData[@"name"];
                         user.email=userData[@"email"];
                         user.username=userData[@"email"];
                         user[@"facebookId"]=userData[@"id"];
                         
                         [user saveEventually];
+                       // [self performSegueWithIdentifier:@"logIn" sender:nil];
                     }
                     
                 }];
 
-            } else {
+            //} else {
                 
-                NSLog(@"User with facebook logged in!");
+              // NSLog(@"User with facebook logged in!");
+           // [self performSegueWithIdentifier:@"logIn" sender:nil];
                 
-            }
+          // }
             
             [self dismissViewControllerAnimated:YES completion:nil];
             
