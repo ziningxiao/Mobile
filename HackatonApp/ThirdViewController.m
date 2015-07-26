@@ -225,12 +225,11 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
         }
         else
         {
+            
+          
+            
             // Camera took multiple pictures; use the list of images for animation.
             self.profilePic.animationImages = self.capturedImages;
-            //jenny
-           // self.profilePic.layer.zPosition = 1;
-            
-            
             self.profilePic.animationDuration = 5.0;    // Show each captured photo for 5 seconds.
             self.profilePic.animationRepeatCount = 0;   // Animate forever (show all photos).
             [self.profilePic startAnimating];
@@ -239,6 +238,10 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
         // To be ready to start again, clear the captured images array.
         [self.capturedImages removeAllObjects];
     }
+    
+    //jenny add, let profile picture fit the size
+    CGSize imageSize = profilePic.image.size;
+    [profilePic sizeThatFits:imageSize];    
     
     self.picker = nil;
 }
